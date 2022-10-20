@@ -20,11 +20,50 @@
       <h2>Fan de bits ? Rejoins le BUT</h2>
       <h2>IUT Nice</h2>
     </section>
-    <p style="font-size: 3em">PornHub</p>
-    <p class="detail">ouais le cul et tout</p>
-    <p class="detail">ouais le cul et tout</p>
-    <p class="detail">ouais le cul et tout</p>
-    <p class="detail">ouais le cul et tout</p>
-    <p class="detail">ouais le cul et tout</p>
+    <section id="aboutPage">
+      <h2>L'association</h2>
+      <div id="aboutContainer">
+        <div id="aboutButtonsContainer">
+          <script>
+            function showBureauContent(){
+              var divBureau = document.getElementById("bureauContent");
+              var divStatus = document.getElementById("statutsContent");
+              var buttonBureau = document.getElementById("bureauButton");
+              var buttonStatus = document.getElementById("statusButton");
+              divBureau.style.display="block";
+              buttonBureau.style.width="21.5vw";
+              buttonBureau.style.borderTopRightRadius ="0px";
+              buttonBureau.style.borderBottomRightRadius ="0px";
+              divStatus.style.display="none";
+              buttonStatus.style.width="20vw";
+              buttonStatus.style.borderTopRightRadius ="5px";
+              buttonStatus.style.borderBottomRightRadius ="5px";
+            }
+            function showStatusContent(){
+              var divBureau = document.getElementById("bureauContent");
+              var divStatus = document.getElementById("statutsContent");
+              var buttonBureau = document.getElementById("bureauButton");
+              var buttonStatus = document.getElementById("statusButton");
+              divBureau.style.display="none";
+              buttonBureau.style.width="20vw";
+              buttonBureau.style.borderTopRightRadius ="5px";
+              buttonBureau.style.borderBottomRightRadius ="5px";
+              divStatus.style.display="block";
+              buttonStatus.style.width="21.5vw";
+              buttonStatus.style.borderTopRightRadius ="0px";
+              buttonStatus.style.borderBottomRightRadius ="0px";
+            }
+          </script>
+          <button id="bureauButton" onclick="showBureauContent()">Bureau</button>
+          <button id="statusButton" onclick="showStatusContent()">Status</button>
+        </div>
+        <div class="aboutContent" id="bureauContent">
+          ddddddddddddddddddddd dddddddddddddddddddd ddddddddddd dddddddddddddd dddddddddddddd ddddddddd dddddddd
+        </div>
+        <div class="aboutContent"  id="statutsContent" style="display: none;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </section>
   </body>
 </html>
