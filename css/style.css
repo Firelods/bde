@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@100&display=swap');
+:root{
+    --text-color : whitesmoke;
+    --box-bg-color: #353535;
+}
+
+body{
+    font-family: 'Archivo Black', sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.detail{
+    font-family: 'Archivo', sans-serif;
+    background-color: #353535;
+    padding: 1em;
+    border-radius: 0.5em;
+}
