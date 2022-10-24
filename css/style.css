@@ -1,44 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@100&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --text-color: whitesmoke;
-    --background-color: #1E1E1E;
+  --text-color: whitesmoke;
+  --background-color: #1e1e1e;
 
-    --box-bg-color: #353535;
+  --box-bg-color: #353535;
 }
 
 body {
-    font-family: 'Archivo Black', sans-serif;
-    /* background-color: var(--background-color); */
-    background-image: url("../assets/BlackGround.jpg");
-    background-position: center;
-    background-size: cover;
+  font-family: "Archivo Black", sans-serif;
+  /*background-color: var(--background-color);
+    */
+  background-image: url("../assets/BlackGround.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: brightness(60%);
+  transition: backdrop-filter 0.2s linear;
+  color: whitesmoke;
+  -webkit-transition: backdrop-filter 0.2s linear;
+  -moz-transition: backdrop-filter 0.2s linear;
+  -ms-transition: backdrop-filter 0.2s linear;
+  -o-transition: backdrop-filter 0.2s linear;
+  scroll-snap-type: y mandatory;
+}
 
-    color: whitesmoke;
+body:hover {
+  backdrop-filter: brightness(70%);
 }
 
 .detail {
-    font-family: 'Archivo', sans-serif;
-    background-color: #353535;
-    padding: 1em;
-    border-radius: 0.5em;
+  font-family: "Archivo", sans-serif;
+  background-color: #353535;
+  padding: 1em;
+  border-radius: 0.5em;
 }
 
 #logo {
-    width: 10vw;
-    margin: 2vw;
+  width: 10vw;
+  margin: 2vw;
+  display: inline-block;
 }
 
 #logo img {
-    width: 100%;
+  width: 100%;
 }
 
-section#mainPage {
-    width: 100%;
-    height: 100vh;
+section {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+section#mainPage > div {
+  display: flex;
+  justify-content: space-between;
+}
+section#mainPage > div > h1 {
+  font-size: 5em;
+  float: right;
+  margin: 2vw;
+}
+
+section#mainPage > h1:nth-of-type(1) {
+  font-size: 5em;
+  margin-top: 10vh;
+  margin-left: 15vw;
+}
+
+section#mainPage h2:nth-of-type(1) {
+  font-size: 3em;
+  margin-top: 2vh;
+  margin-left: 20vw;
+}
+section#events {
+  width: 80vw;
+}
+section#events > h2 {
+  font-size: 3em;
+  margin: 2vh;
+}
+section#events > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+/* Rectangle 8 */
+section#events > div > div {
+  position: relative;
+  width: 60vw;
+  height: 70vh;
+  background: rgba(53, 53, 53, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section#events > div > div > div > h3 {
+  width: 284px;
+  height: 44px;
+margin-bottom: 14vh;
+  font-family: "Archivo Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+section#events > div > div > div {
+  width: 40%;
+  display: inline-block;
+}
+/* Rectangle 9 */
+section#events > div > div > div > div:nth-child(1) {
+  display: inline-block;
+  width: 422px;
+  height: 456px;
+
+  background: #d9d9d9;
+}
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation */
+
+section#events > div > div > div:nth-child(2) {
+  width: 40%;
+  display: inline-block;
+}
+section#events > div > div > p {
+  width: 50%;
+
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+
+  color: #ffffff;
+}
+
+#circle {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 50px solid white;
+  filter: blur(200px);
+  -webkit-filter: blur(200px);
 }
