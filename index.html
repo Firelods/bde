@@ -8,121 +8,33 @@
 
     <title>BDE</title>
   </head>
-  <body dir="ltr">
-    <div id="circle"></div>
-    <section id="mainPage">
-      <div>
-        <div id="logo">
-          <img
-            src="assets/logobdefinal.png"
-            alt="logo du BDE Info de l'IUT de Nice"
-          />
-        </div>
-        <h1 id="iut">IUT Nice</h1>
-      </div>
-      <h1>BDE INFO</h1>
-      <h2>Fan de bits ? Rejoins le BUT !</h2>
-    </section>
-    <section id="events">
-      <h2>Évènements</h2>
-      <div>
-        <span id="leftArrow"
-          ><svg
-            width="47"
-            height="82"
-            viewBox="0 0 47 82"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.11091 37.1109C-0.0369711 39.2588 -0.0369711 42.7412 2.11091 44.8891L37.1127 79.8909C39.2606 82.0388 42.743 82.0388 44.8909 79.8909C47.0388 77.743 47.0388 74.2606 44.8909 72.1127L13.7782 41L44.8909 9.8873C47.0388 7.73942 47.0388 4.25701 44.8909 2.10913C42.743 -0.0387573 39.2606 -0.0387573 37.1127 2.10913L2.11091 37.1109ZM13 35.5H6L6 46.5H13V35.5Z"
-              fill="white"
-            />
-          </svg>
-        </span>
+  <body>
+    <nav>
+      <div id="topLeft">
         <div>
-          <div><div></div></div>
+          <img src="./assets/logobdefinal.png" alt="logoBDE" />
           <div>
-            <h3>Evenement 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation
-            </p>
+            <div>BDE</div>
+            <div>INFO</div>
           </div>
         </div>
-        <span id="rightArrow">
-          <svg
-            width="47"
-            height="82"
-            viewBox="0 0 47 82"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M44.8891 44.8891C47.037 42.7412 47.037 39.2588 44.8891 37.1109L9.8873 2.10913C7.73942 -0.0387573 4.25701 -0.0387573 2.10913 2.10913C-0.0387573 4.25701 -0.0387573 7.73942 2.10913 9.8873L33.2218 41L2.10913 72.1127C-0.0387573 74.2606 -0.0387573 77.743 2.10913 79.8909C4.25701 82.0388 7.73942 82.0388 9.8873 79.8909L44.8891 44.8891ZM41 35.5H34V46.5H41V35.5Z"
-              fill="white"
-            />
-          </svg>
-        </span>
+        <div>IUT Nice</div>
       </div>
-    </section>
-    <section id="aboutPage">
-      <h2>L'association</h2>
-      <div id="aboutContainer">
-        <div id="aboutButtonsContainer">
-          <script>
-            function showBureauContent() {
-              var divBureau = document.getElementById("bureauContent");
-              var divStatus = document.getElementById("statutsContent");
-              var buttonBureau = document.getElementById("bureauButton");
-              var buttonStatus = document.getElementById("statusButton");
-              divBureau.style.display = "block";
-              buttonBureau.style.width = "21.5vw";
-              buttonBureau.style.borderTopRightRadius = "0px";
-              buttonBureau.style.borderBottomRightRadius = "0px";
-              divStatus.style.display = "none";
-              buttonStatus.style.width = "20vw";
-              buttonStatus.style.borderTopRightRadius = "5px";
-              buttonStatus.style.borderBottomRightRadius = "5px";
-            }
-            function showStatusContent() {
-              var divBureau = document.getElementById("bureauContent");
-              var divStatus = document.getElementById("statutsContent");
-              var buttonBureau = document.getElementById("bureauButton");
-              var buttonStatus = document.getElementById("statusButton");
-              divBureau.style.display = "none";
-              buttonBureau.style.width = "20vw";
-              buttonBureau.style.borderTopRightRadius = "5px";
-              buttonBureau.style.borderBottomRightRadius = "5px";
-              divStatus.style.display = "block";
-              buttonStatus.style.width = "21.5vw";
-              buttonStatus.style.borderTopRightRadius = "0px";
-              buttonStatus.style.borderBottomRightRadius = "0px";
-            }
-          </script>
-          <button id="bureauButton" onclick="showBureauContent()">
-            Bureau
-          </button>
-          <button id="statusButton" onclick="showStatusContent()">
-            Status
-          </button>
-        </div>
-        <div class="aboutContent" id="bureauContent">
-          ddddddddddddddddddddd dddddddddddddddddddd ddddddddddd dddddddddddddd
-          dddddddddddddd ddddddddd dddddddd
-        </div>
-        <div class="aboutContent" id="statutsContent" style="display: none">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </div>
+      <ul>
+        <li><a href="#"> Accueil</a></li>
+        <li><a href="./evenements.html"> Evènements</a></li>
+        <li><a href="#"> L'association</a></li>
+        <li><a href="#"> Contact</a></li>
+      </ul>
+      <div id="bottomLogoReseau">
+        <a href="#"><img src="./assets/insta.png" alt="insta" /></a>
+        <a href="#"><img src="./assets/twitter.png" alt="twitter" /></a>
       </div>
+    </nav>
+
+    <section id="mainPage">
+      <h1>Bienvenue !</h1>
+      <a href="#">Découvrir nos évènements</a>
     </section>
   </body>
-  <script src="./js/script.js"></script>
 </html>
